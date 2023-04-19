@@ -1,6 +1,6 @@
 {
   "homepage": "http://ani94s.github.io/ani-portfolio",
-  "name": "startup-page",
+  "name": "ani-portfolio",
   "version": "0.1.0",
   "private": false,
   "dependencies": {

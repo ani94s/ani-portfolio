@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ani-portfolio/static/css/main.8d279e96.css",
-    "main.js": "/ani-portfolio/static/js/main.f7afe975.js",
+    "main.js": "/ani-portfolio/static/js/main.3b1296d4.js",
     "static/media/ani2.png": "/ani-portfolio/static/media/ani2.7cbc56755ad88569c433.png",
     "static/media/robot.png": "/ani-portfolio/static/media/robot.b3924d6a4b8b19ef9de9.png",
     "static/media/bill.png": "/ani-portfolio/static/media/bill.042c4c8c3a77ddd977e0.png",
@@ -27,10 +27,10 @@
     "static/media/linkedin.svg": "/ani-portfolio/static/media/linkedin.dfe9eab0dfded897de028dc0216b6686.svg",
     "static/media/facebook2.svg": "/ani-portfolio/static/media/facebook2.b46c1e2d6f0db6cae5ffcf8a74629080.svg",
     "main.8d279e96.css.map": "/ani-portfolio/static/css/main.8d279e96.css.map",
-    "main.f7afe975.js.map": "/ani-portfolio/static/js/main.f7afe975.js.map"
+    "main.3b1296d4.js.map": "/ani-portfolio/static/js/main.3b1296d4.js.map"
   },
   "entrypoints": [
     "static/css/main.8d279e96.css",
-    "static/js/main.f7afe975.js"
+    "static/js/main.3b1296d4.js"
   ]
 }

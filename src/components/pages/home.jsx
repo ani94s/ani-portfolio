@@ -9,7 +9,7 @@ const Home = () => (
   >
     <div className="w-full flex md:flex-row flex-col justify-center items-center">
       <div
-        className={`md:w-1/3 w-full max-w-lg flex md:justify-end justify-center items-center md:order-1 order-2`}
+        className={`md:w-[30%] w-full max-w-lg flex md:justify-end justify-center items-center md:order-1 order-2`}
       >
         <img
           src={ani1}

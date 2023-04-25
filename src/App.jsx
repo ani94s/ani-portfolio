@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 const App = () => (
-  <div className="bg-primary w-[100%] text-white overflow-hidden">
+  <div className="flex flex-col justify-between min-h-screen bg-primary w-[100%] text-white overflow-hidden">
     <BrowserRouter>
       <Navbar />
 

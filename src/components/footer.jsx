@@ -7,10 +7,10 @@ const Footer = () => (
     <div className={`${styles.boxWidth}`}>
       <footer
         id="footer"
-        className={`flex justify-center items-center ${styles.paddingY} border-t border-t-tertiary`}
+        className={`flex justify-center items-center py-4 border-t border-t-tertiary`}
       >
         <div
-          className={`w-full flex flex-wrap flex-row md:mx-16 mx-0 justify-between`}
+          className={`w-full flex flex-wrap flex-row md:mx-8 mx-4 justify-between`}
         >
           <div className="flex flex-col py-4 sm:py-0">
             <h6>Phone</h6>

@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className={`${styles.paddingX} ${styles.flexCenter} w-full`}>
       <div className={`${styles.boxWidth}`}>
-        <nav className="w-full flex flex-row justify-between border-b border-b-tertiary items-center navbar">
+        <nav className="w-full flex flex-row justify-between items-center navbar">
           <Link className="flex flex-row py-4" to={navLinks[0].url} onClick={()=>setSelectedTab(navLinks[0].id)}>
             <img src={anilogo} alt="Logo" className="w-[46px] h-[32px]" />
             <div className="flex flex-col align-middle justify-start text-xs uppercase font-poppins">
@@ -23,9 +23,9 @@ const Navbar = () => {
               <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)}>
                 <li
                   key={nav.id}
-                  className={`p-5 font-poppins font-normal ${seletectedTab === nav.id ? 'shadow-md border border-b-primary border-tertiary shadow-primary translate-y-1':''} hover:translate-y-1 hover:transition-transform cursor-pointer text-xs text-white`}
+                  className={`p-4 m-[1px] font-poppins font-normal ${seletectedTab === nav.id ? 'translate-y-1':''} hover:translate-y-1 hover:transition-transform border-b border-tertiary rounded-b-md rounded-t-2xl cursor-pointer text-xs text-white`}
                 >
-                  {nav.title}
+                  <p className={`${seletectedTab===nav.id ? '':''}`}>{nav.title}</p>
                 </li>
               </Link>
             ))}

@@ -1,12 +1,11 @@
 import React from "react";
 import { facebook, instagram, github, linkedin } from "../assets";
-import BoxPadding from "../reusables/box-padding";
 import styles from "../style";
 
 const Footer = () => (
   <div className={`${styles.paddingX} ${styles.flexCenter} w-full`}>
     <div className={`${styles.boxWidth}`}>
-      <section
+      <footer
         id="footer"
         className={`flex justify-center items-center ${styles.paddingY} border-t border-t-secondary`}
       >
@@ -15,7 +14,7 @@ const Footer = () => (
         >
           <div className="flex flex-col py-4 sm:py-0">
             <h6>Phone</h6>
-            <p>+447721792760</p>
+            <p>+44 77217 92760</p>
           </div>
           <div className="flex flex-col py-4 sm:py-0">
             <h6>Follow me</h6>
@@ -43,7 +42,7 @@ const Footer = () => (
         <p>+447721792760</p>
       </div> */}
         </div>
-      </section>
+      </footer>
     </div>
   </div>
 );

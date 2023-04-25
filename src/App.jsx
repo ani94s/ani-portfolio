@@ -13,10 +13,10 @@ const App = () => (
       <div className={`${styles.paddingX} ${styles.flexCenter} w-full`}>
         <div className={`${styles.boxWidth}`}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/ani-portfolio/" element={<Home />} />
+            <Route path="/ani-portfolio/resume" element={<Resume />} />
+            <Route path="/ani-portfolio/projects" element={<Projects />} />
+            <Route path="/ani-portfolio/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>

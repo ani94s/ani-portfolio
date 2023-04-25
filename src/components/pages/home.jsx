@@ -14,7 +14,7 @@ const Home = () => (
         <img
           src={ani1}
           alt="profile-pic"
-          className="w-auto relative z-[5] rounded-full"
+          className="w-auto relative z-10 rounded-full"
         />
       </div>
       <div
@@ -31,9 +31,7 @@ const Home = () => (
           </div>
         </div>
         <p className="font-poppins font-normal text-dimWhite ss:text-base text-sm mt-5">
-          An experienced software engineer with over 5 years of professional
-          experience in software development, which includes front-end
-          development expertise using HTML, CSS, and React for about 1.5 years.
+        An experienced software engineer with over 5 years of professional experience in software development, which includes front-end development expertise using HTML, CSS, and React for about 2 years. I have experience working on a range of projects, from small company websites to huge corporate systems, and I am passionate about producing high-quality and aesthetically pleasing user interfaces.
         </p>
       </div>
     </div>

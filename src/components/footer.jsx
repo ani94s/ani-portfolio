@@ -7,7 +7,7 @@ const Footer = () => (
     <div className={`${styles.boxWidth}`}>
       <footer
         id="footer"
-        className={`flex justify-center items-center ${styles.paddingY} border-t border-t-secondary`}
+        className={`flex justify-center items-center ${styles.paddingY} border-t border-t-tertiary`}
       >
         <div
           className={`w-full flex flex-wrap flex-row md:mx-16 mx-0 justify-between`}
@@ -35,7 +35,7 @@ const Footer = () => (
           </div>
           <div className="flex flex-col py-4 sm:py-0">
             <h6>Email</h6>
-            <p>anirudhan94s@gmail.com</p>
+            <p><a href="mailto:anirudhan94s@gmail.com">anirudhan94s@gmail.com</a></p>
           </div>
           {/* <div className="flex flex-col m-4">
         <h6>Phone</h6>

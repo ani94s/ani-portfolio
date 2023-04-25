@@ -1,11 +1,9 @@
 import React from "react";
-// import EmailContent from "../email-content";
-import Placeholder from "./placeholder";
+import EmailContent from "../email-content";
 
 const Contact = () => (
-  <div className="flex w-full justify-center items-center">
-    <Placeholder />
-    {/* <EmailContent /> */}
+  <div className="flex flex-col w-full justify-center items-center p-8">
+    <EmailContent />
   </div>
 );
 

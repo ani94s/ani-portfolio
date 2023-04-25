@@ -6,11 +6,12 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [seletectedTab, setSelectedTab] = useState(navLinks[0].id);
   return (
     <div className={`${styles.paddingX} ${styles.flexCenter} w-full`}>
       <div className={`${styles.boxWidth}`}>
-        <nav className="w-full flex flex-row py-6 justify-between items-center navbar">
-          <Link className="flex flex-row" to={"/"}>
+        <nav className="w-full flex flex-row justify-between border-b border-b-tertiary items-center navbar">
+          <Link className="flex flex-row py-4" to={navLinks[0].url} onClick={()=>setSelectedTab(navLinks[0].id)}>
             <img src={anilogo} alt="Logo" className="w-[46px] h-[32px]" />
             <div className="flex flex-col align-middle justify-start text-xs uppercase font-poppins">
               <p>Anirudhan</p>
@@ -19,12 +20,14 @@ const Navbar = () => {
           </Link>
           <ul className="list-none sm:flex hidden flex-row justify-end items-center">
             {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className="mr-8 last:mr-0 font-poppins font-normal cursor-pointer text-xs text-white"
-              >
-                <Link to={nav.url}>{nav.title}</Link>
-              </li>
+              <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)}>
+                <li
+                  key={nav.id}
+                  className={`p-5 font-poppins font-normal ${seletectedTab === nav.id ? 'shadow-md border border-b-primary border-tertiary shadow-primary translate-y-1':''} hover:translate-y-1 hover:transition-transform cursor-pointer text-xs text-white`}
+                >
+                  {nav.title}
+                </li>
+              </Link>
             ))}
           </ul>
           <div className="sm:hidden flex flex-1 justify-end">
@@ -35,16 +38,18 @@ const Navbar = () => {
               onClick={() => setIsOpen((prev) => !prev)}
             />
             {isOpen && (
-              <div className="flex justify-center absolute top-20 right-0 p-6 bg-slate-700 min-w-[140px] rounded-lg mx-4 my-2">
-                <ul className="list-none flex flex-col justify-center items-center">
+              <div className="flex justify-center absolute top-20 right-0 bg-slate-700 min-w-[140px] border border-slate-700 z-50 rounded-lg mx-4 my-2">
+                <ul className="w-full list-none flex flex-col justify-center items-center">
                   {navLinks.map((nav, index) => (
+                    <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)} className="w-full">
                     <li
                       key={nav.id}
-                      className="mb-8 last:mb-0 font-poppins font-normal cursor-pointer text-xs text-white"
+                      className={`${seletectedTab === nav.id ? 'bg-secondary':''} p-5 w-full hover:bg-tertiary last:mb-0 font-poppins font-normal cursor-pointer text-center text-xs text-white`}
                       onClick={() => setIsOpen((prev) => !prev)}
                     >
-                      <Link to={nav.url}>{nav.title}</Link>
+                      {nav.title}
                     </li>
+                    </Link>
                   ))}
                 </ul>
               </div>

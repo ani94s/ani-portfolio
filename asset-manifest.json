@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ani-portfolio/static/css/main.72a2ea73.css",
-    "main.js": "/ani-portfolio/static/js/main.01f5f8e6.js",
+    "main.css": "/ani-portfolio/static/css/main.dfc48458.css",
+    "main.js": "/ani-portfolio/static/js/main.53be0df3.js",
     "static/media/ani2.jpg": "/ani-portfolio/static/media/ani2.a7244499e79a5e2bc108.jpg",
     "static/media/placeholder.png": "/ani-portfolio/static/media/placeholder.12c901efd9128a3959cc.png",
     "static/media/google.svg": "/ani-portfolio/static/media/google.c869581ad4b65688b371446c80ff8e60.svg",
@@ -21,11 +21,11 @@
     "static/media/quotes.svg": "/ani-portfolio/static/media/quotes.c8bb1da8320f056e0e1cf903465cc3a6.svg",
     "static/media/linkedin.svg": "/ani-portfolio/static/media/linkedin.dfe9eab0dfded897de028dc0216b6686.svg",
     "static/media/facebook2.svg": "/ani-portfolio/static/media/facebook2.b46c1e2d6f0db6cae5ffcf8a74629080.svg",
-    "main.72a2ea73.css.map": "/ani-portfolio/static/css/main.72a2ea73.css.map",
-    "main.01f5f8e6.js.map": "/ani-portfolio/static/js/main.01f5f8e6.js.map"
+    "main.dfc48458.css.map": "/ani-portfolio/static/css/main.dfc48458.css.map",
+    "main.53be0df3.js.map": "/ani-portfolio/static/js/main.53be0df3.js.map"
   },
   "entrypoints": [
-    "static/css/main.72a2ea73.css",
-    "static/js/main.01f5f8e6.js"
+    "static/css/main.dfc48458.css",
+    "static/js/main.53be0df3.js"
   ]
 }

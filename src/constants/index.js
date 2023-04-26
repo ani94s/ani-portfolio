@@ -13,13 +13,13 @@ export const navLinks = [
   },
   {
     id: "resume",
-    title: "Resume",
-    url: "/ani-portfolio/resume",
+    title: "About Me",
+    url: "/ani-portfolio/me",
   },
   {
     id: "projects",
-    title: "Projects",
-    url: "/ani-portfolio/projects",
+    title: "My Works",
+    url: "/ani-portfolio/my-works",
   },
   {
     id: "contact",

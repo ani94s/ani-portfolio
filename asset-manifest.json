@@ -1,31 +1,30 @@
 {
   "files": {
-    "main.css": "/ani-portfolio/static/css/main.dfc48458.css",
-    "main.js": "/ani-portfolio/static/js/main.53be0df3.js",
+    "main.css": "/ani-portfolio/static/css/main.923a9173.css",
+    "main.js": "/ani-portfolio/static/js/main.72c89e21.js",
     "static/media/ani2.jpg": "/ani-portfolio/static/media/ani2.a7244499e79a5e2bc108.jpg",
     "static/media/placeholder.png": "/ani-portfolio/static/media/placeholder.12c901efd9128a3959cc.png",
-    "static/media/google.svg": "/ani-portfolio/static/media/google.c869581ad4b65688b371446c80ff8e60.svg",
-    "static/media/apple.svg": "/ani-portfolio/static/media/apple.fcf3c88ab06d5964255bd6139baa74da.svg",
     "static/media/logo.svg": "/ani-portfolio/static/media/logo.107556e3d36401966a311b4247e57e26.svg",
-    "static/media/Discount.svg": "/ani-portfolio/static/media/Discount.a6d9f332ea77ac0d6cbf58364176bc16.svg",
     "static/media/instagram.svg": "/ani-portfolio/static/media/instagram.a47a7ee77e256ebf101bea5a70974470.svg",
+    "static/media/skills.svg": "/ani-portfolio/static/media/skills.ab82ce35756c06d065e570c797454b17.svg",
     "static/media/close.svg": "/ani-portfolio/static/media/close.4b1cc5d063959cf86b7849aef0c24c63.svg",
-    "static/media/Star.svg": "/ani-portfolio/static/media/Star.4e0f3ea6e0c6e27f8acc54dcca7cfbe2.svg",
     "static/media/menu.svg": "/ani-portfolio/static/media/menu.773d1f3d335d2a46203de2be7f4f4e19.svg",
-    "static/media/Shield.svg": "/ani-portfolio/static/media/Shield.7ab56fff277c91081663825b6efaea52.svg",
     "static/media/github.svg": "/ani-portfolio/static/media/github.b58e223aeb910cb33e678090f3ef6725.svg",
     "static/media/twitter.svg": "/ani-portfolio/static/media/twitter.e0bed3860b69a27bbe0560823b486ae3.svg",
     "static/media/arrow-up.svg": "/ani-portfolio/static/media/arrow-up.f0281f2a41a6844dff95ff0c3a06e194.svg",
     "static/media/Send.svg": "/ani-portfolio/static/media/Send.b7f09b0fd9a29ffad13e1f504acd624a.svg",
     "index.html": "/ani-portfolio/index.html",
-    "static/media/quotes.svg": "/ani-portfolio/static/media/quotes.c8bb1da8320f056e0e1cf903465cc3a6.svg",
     "static/media/linkedin.svg": "/ani-portfolio/static/media/linkedin.dfe9eab0dfded897de028dc0216b6686.svg",
+    "static/media/other-exp.svg": "/ani-portfolio/static/media/other-exp.33e2aef05cc99fc5a46661faf51b90e1.svg",
+    "static/media/mail.svg": "/ani-portfolio/static/media/mail.e11d99b1d80204d18c4ec7f14d274d2b.svg",
+    "static/media/education.svg": "/ani-portfolio/static/media/education.00c3bfb26050ef98396e31f6798231b8.svg",
     "static/media/facebook2.svg": "/ani-portfolio/static/media/facebook2.b46c1e2d6f0db6cae5ffcf8a74629080.svg",
-    "main.dfc48458.css.map": "/ani-portfolio/static/css/main.dfc48458.css.map",
-    "main.53be0df3.js.map": "/ani-portfolio/static/js/main.53be0df3.js.map"
+    "static/media/professional-exp.svg": "/ani-portfolio/static/media/professional-exp.780dab32c526f4a32c6314ebe86be8c3.svg",
+    "main.923a9173.css.map": "/ani-portfolio/static/css/main.923a9173.css.map",
+    "main.72c89e21.js.map": "/ani-portfolio/static/js/main.72c89e21.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfc48458.css",
-    "static/js/main.53be0df3.js"
+    "static/css/main.923a9173.css",
+    "static/js/main.72c89e21.js"
   ]
 }

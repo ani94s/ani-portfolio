@@ -1,8 +1,15 @@
 import React from 'react'
+import { otherExperience, workExperience } from '../constants'
+import Experience from './experience'
+import Skillset from './skillset'
 
-const Subpanel = () => {
+const Subpanel = ({subHeadings}) => {
   return (
-    <div className='h-full flex-1 flex flex-col justify-between items-center'>Subpanel</div>
+    <div className=' flex-1 flex flex-col items-center overflow-y-scroll'>
+      <Experience id={subHeadings[0].id} experiences={workExperience} title="Professional Experience" />
+      <Experience id={subHeadings[1].id} experiences={otherExperience} title="Other Experience" />
+      <Skillset id={subHeadings[3].id}/>
+    </div>
   )
 }
 

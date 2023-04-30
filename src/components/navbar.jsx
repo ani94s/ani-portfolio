@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "../style";
 import { anilogo, close, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
@@ -8,8 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [seletectedTab, setSelectedTab] = useState(navLinks[0].id);
   return (
-    <div className={`${styles.paddingX} ${styles.flexCenter} w-full`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className="sticky w-full top-0 bg-primary z-20">
         <nav className="w-full flex flex-row justify-between items-center navbar">
           <Link className="flex flex-row py-4" to={navLinks[0].url} onClick={()=>setSelectedTab(navLinks[0].id)}>
             <img src={anilogo} alt="Logo" className="w-[46px] h-[32px]" />
@@ -56,8 +54,7 @@ const Navbar = () => {
             )}
           </div>
         </nav>
-      </div>
-    </div>
+        </div>
   );
 };
 

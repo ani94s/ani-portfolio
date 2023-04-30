@@ -5,7 +5,7 @@ import styles from "../../style";
 const Home = () => (
   <section
     id="intro"
-    className={`flex ${styles.paddingY} justify-center items-center md:mx-16 mx-0`}
+    className={`flex ${styles.paddingX} h-full justify-center items-center md:mx-16 mx-0`}
   >
     <div className="w-full flex md:flex-row flex-col justify-center items-center">
       <div

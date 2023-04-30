@@ -6,7 +6,6 @@ import { profExp } from "../../assets";
 import { otherExp } from "../../assets";
 import { education } from "../../assets";
 import { skills } from "../../assets";
-import styles from "../../style";
 
 const subHeadings = [
     {

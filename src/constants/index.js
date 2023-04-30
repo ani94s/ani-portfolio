@@ -87,7 +87,7 @@ export const resumeSkills =[
 export const workExperience = [
   {
     id:'clippd',
-    company:'Clippd Pvt Ltd',
+    institution:'Clippd Pvt Ltd',
     location: 'London,UK',
     from: 'Jun 2021',
     to: 'Nov 2022',
@@ -104,7 +104,7 @@ export const workExperience = [
   },
   {
     id:'megacart',
-    company:'Megacart',
+    institution:'Megacart',
     location: 'Leicester,UK',
     from: 'Feb 2021',
     to: 'Jun 2021',
@@ -118,7 +118,7 @@ export const workExperience = [
   },
   {
     id:'soliton',
-    company:'Soliton Technologies',
+    institution:'Soliton Technologies',
     location: 'Coimbatore,India',
     from: 'Jun 2016',
     to: 'Nov 2019',
@@ -136,7 +136,7 @@ export const workExperience = [
 export const otherExperience = [
   {
     id:'hot-fudge',
-    company:'Hot Fudge',
+    institution:'Hot Fudge',
     location: 'Leicester,UK',
     from: 'Mar 2020',
     to: 'Mar 2021',
@@ -149,7 +149,7 @@ export const otherExperience = [
   },
   {
     id:'soliton-training',
-    company:'Soliton Technologies',
+    institution:'Soliton Technologies',
     location: 'Coimbatore,India',
     from: 'Mar 2019',
     to: 'Jun 2019',
@@ -158,6 +158,31 @@ export const otherExperience = [
     keyPoints: [
       'Drove the internship training program and mentored 25 junior engineers on software development best practices, resulting in a 90% retention rate of engineers hired in permanent roles.',
       'The internship focused on and provided insights into LabVIEW and programming fundamentals, along with the software development lifecycle.'
+    ]
+  }
+]
+
+export const education = [
+  {
+    id:'uol',
+    institution:'University of Leicester',
+    location: 'Leicester,UK',
+    from: 'Jan 2020',
+    to: 'May 2022',
+    link: 'https://le.ac.uk',
+    course:'Master of Science - Advanced Software Engineering',
+    keyPoints: [
+    ]
+  },
+  {
+    id:'srec',
+    institution:'Shri Ramakrishna Engineering College',
+    location: 'Coimbatore,India',
+    from: 'Jun 2012',
+    to: 'May 2016',
+    link: 'https://www.srec.ac.in',
+    course:'Bachelor of Engineering - Electronics and Communication Engineering',
+    keyPoints: [
     ]
   }
 ]

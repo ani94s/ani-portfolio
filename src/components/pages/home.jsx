@@ -5,11 +5,11 @@ import styles from "../../style";
 const Home = () => (
   <section
     id="intro"
-    className={`flex ${styles.paddingX} h-full justify-center items-center md:mx-16 mx-0`}
+    className={`flex flex-1 items-center h-full overflow-y-scroll`}
   >
-    <div className="w-full flex md:flex-row flex-col justify-center items-center">
+    <div className={`${styles.padding} w-full flex md:flex-row flex-col md:justify-center items-center h-full`}>
       <div
-        className={`md:w-[30%] w-full max-w-lg flex md:justify-end justify-center items-center md:order-1 order-2`}
+        className={`md:w-[30%] w-full max-w-sm flex md:justify-end justify-center items-center`}
       >
         <img
           src={ani1}
@@ -18,7 +18,7 @@ const Home = () => (
         />
       </div>
       <div
-        className={`flex-1 ${styles.flexStart} flex-col lg:pl-16 md:pl-12 pl-0 md:pb-0 pb-8 md:order-2 order-1`}
+        className={`w-full ${styles.flexStart} flex-col lg:pl-16 md:pl-12 pl-0 md:pb-0 pb-8`}
       >
         <div className="flex flex-row justify-start items-start w-full opacity-100">
           <div className="flex-1 font-poppins">

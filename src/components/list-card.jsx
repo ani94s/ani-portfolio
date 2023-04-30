@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ListCard = ({id,title,list}) => {
+const ListCard = ({id,header,list}) => {
   return (
     <div key={id} className='border border-secondary rounded-lg flex flex-col'>
-        <h3 className='py-2 border-b text-center'>{title}</h3>
+        {header}
         <ul className='flex flex-col gap-1 p-4'>
             {list.map((subSkill)=>{
                 return <li className='items-center justify-center rounded-md shadow-md bg-gradient-to-l from-secondary to-primary'>

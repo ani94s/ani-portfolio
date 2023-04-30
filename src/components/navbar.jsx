@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { anilogo, close, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
+import styles from "../style";
+import Button from "./atoms/button";
+import resume from "../assets/Anirudhan.pdf"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [seletectedTab, setSelectedTab] = useState(navLinks[0].id);
   return (
-    <div className="sticky w-full top-0 bg-primary z-20">
+    <div className={`${styles.boxWidth} ${styles.paddingX} fixed w-full top-0 bg-primary z-20`}>
         <nav className="w-full flex flex-row justify-between items-center navbar">
           <Link className="flex flex-row py-4" to={navLinks[0].url} onClick={()=>setSelectedTab(navLinks[0].id)}>
             <img src={anilogo} alt="Logo" className="w-[46px] h-[32px]" />
@@ -16,19 +19,31 @@ const Navbar = () => {
               <p>Srisudhan</p>
             </div>
           </Link>
-          <ul className="list-none sm:flex hidden flex-row justify-end items-center">
-            {navLinks.map((nav, index) => (
-              <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)}>
-                <li
-                  key={nav.id}
-                  className={`p-4 m-[1px] font-poppins font-normal ${seletectedTab === nav.id ? 'translate-y-1':''} hover:translate-y-1 hover:transition-transform border-b border-tertiary rounded-b-md rounded-t-2xl cursor-pointer text-xs text-white`}
-                >
-                  <p className={`${seletectedTab===nav.id ? '':''}`}>{nav.title}</p>
-                </li>
-              </Link>
-            ))}
-          </ul>
-          <div className="sm:hidden flex flex-1 justify-end">
+          <div className="sm:flex hidden gap-2 items-center">
+            <a href={resume} download="Anirudhan-Resume.pdf" >
+              <Button type="button" className="flex items-center justify-center rounded-md p-2 h-10">
+                Download CV
+              </Button>
+            </a>
+            <ul className="list-none flex flex-row justify-end items-center">
+              {navLinks.map((nav, index) => (
+                <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)}>
+                  <li
+                    key={nav.id}
+                    className={`p-4 m-[1px] font-poppins font-normal ${seletectedTab === nav.id ? 'translate-y-1':''} hover:translate-y-1 hover:transition-transform border-b border-tertiary rounded-b-md rounded-t-2xl cursor-pointer text-xs text-white`}
+                  >
+                    <p className={`${seletectedTab===nav.id ? '':''}`}>{nav.title}</p>
+                  </li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+          <div className="sm:hidden flex items-center gap-4 justify-end">
+            <a href={resume} download="Anirudhan-Resume.pdf" >
+              <Button type="button" className="rounded-md p-2 h-10">
+                Download CV
+              </Button>
+            </a>
             <img
               src={isOpen ? close : menu}
               alt="menu"

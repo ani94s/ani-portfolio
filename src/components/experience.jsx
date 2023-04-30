@@ -8,7 +8,7 @@ const Experience = ({id,experiences, title}) => {
         <ResumeContainer id={id} title={title}>
             <div className='flex flex-col gap-2 w-full p-4'>
                 {experiences.map((exp)=>{
-                    return <ListCard id={exp.id} title={exp.company} list={exp.keyPoints} />
+                    return <ListCard id={exp.id} header={exp.institution} list={exp.keyPoints} />
                 })}
             </div>
         </ResumeContainer>

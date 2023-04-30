@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="w-full flex flex-row justify-between items-center navbar">
           <Link className="flex flex-row py-4" to={navLinks[0].url} onClick={()=>setSelectedTab(navLinks[0].id)}>
             <img src={anilogo} alt="Logo" className="w-[46px] h-[32px]" />
-            <div className="flex flex-col align-middle justify-start text-xs uppercase font-poppins">
+            <div className="ss:flex hidden flex-col align-middle justify-start text-xs uppercase font-poppins">
               <p>Anirudhan</p>
               <p>Srisudhan</p>
             </div>

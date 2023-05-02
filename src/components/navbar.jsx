@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import styles from "../style";
 import Button from "./atoms/button";
 import resume from "../assets/Anirudhan.pdf"
+import download from "../assets/icons/download.svg"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,34 +15,35 @@ const Navbar = () => {
         <nav className="w-full flex flex-row justify-between items-center navbar">
           <Link className="flex flex-row py-4" to={navLinks[0].url} onClick={()=>setSelectedTab(navLinks[0].id)}>
             <img src={anilogo} alt="Logo" className="w-[46px] h-[32px]" />
-            <div className="ss:flex hidden flex-col align-middle justify-start text-xs uppercase font-poppins">
+            <div className="flex flex-col align-middle justify-start text-xs uppercase font-poppins">
               <p>Anirudhan</p>
               <p>Srisudhan</p>
             </div>
           </Link>
           <div className="sm:flex hidden gap-2 items-center">
-            <a href={resume} download="Anirudhan-Resume.pdf" >
-              <Button type="button" className="flex items-center justify-center rounded-md p-2 h-10">
-                Download CV
-              </Button>
-            </a>
             <ul className="list-none flex flex-row justify-end items-center">
               {navLinks.map((nav, index) => (
                 <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)}>
                   <li
                     key={nav.id}
-                    className={`p-4 m-[1px] font-poppins font-normal ${seletectedTab === nav.id ? 'translate-y-1':''} hover:translate-y-1 hover:transition-transform border-b border-tertiary rounded-b-md rounded-t-2xl cursor-pointer text-xs text-white`}
+                    className={`p-4 m-[1px] font-poppins font-normal ${seletectedTab === nav.id ? 'translate-y-1 to-tertiary':'to-secondary'} hover:translate-y-1 hover:transition-transform bg-gradient-to-b from-primary rounded-b-md rounded-t-2xl cursor-pointer text-xs text-white`}
                   >
                     <p className={`${seletectedTab===nav.id ? '':''}`}>{nav.title}</p>
                   </li>
                 </Link>
               ))}
             </ul>
+            <a href={resume} download="Anirudhan-Resume.pdf" >
+              <Button type="button" className="flex gap-2 items-center justify-center rounded-md p-2">
+              <img src={download} alt="Download Resume" width="24px" height="24px" />
+                Resume
+              </Button>
+            </a>
           </div>
           <div className="sm:hidden flex items-center gap-4 justify-end">
             <a href={resume} download="Anirudhan-Resume.pdf" >
-              <Button type="button" className="rounded-md p-2 h-10">
-                Download CV
+              <Button type="button" className="rounded-md p-2 bg-secondary">
+                <img src={download} alt="Download Resume" width="24px" height="24px" />
               </Button>
             </a>
             <img

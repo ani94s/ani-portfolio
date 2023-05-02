@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import Sidebar from "../sidebar";
-import Subpanel from "../subpanel";
-import { profExp } from "../../assets";
-import { otherExp } from "../../assets";
-import { education } from "../../assets";
-import { skills } from "../../assets";
+import Sidebar from "../components/sidebar";
+import Subpanel from "../components/subpanel";
+import { profExp } from "../assets";
+import { otherExp } from "../assets";
+import { education } from "../assets";
+import { skills } from "../assets";
 
 const subHeadings = [
     {
@@ -41,6 +41,7 @@ const MyDetails = () => {
             />
             <Subpanel 
                 subHeadings={subHeadings}
+                selectedHeading={selectedHeading}
             />
         </div>
     )

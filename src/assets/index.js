@@ -16,6 +16,8 @@ import education from "./icons/education.svg";
 import skills from "./icons/skills.svg";
 import mail from "./icons/mail.svg";
 import placeholder from "./placeholder.png";
+import techstack from "./techstack.png";
+import techstackAnimate from "./tech-stack.gif";
 
 export {
   logo,
@@ -35,5 +37,7 @@ export {
   otherExp,
   education,
   skills,
-  mail
+  mail,
+  techstack,
+  techstackAnimate
 };

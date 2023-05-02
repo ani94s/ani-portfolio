@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./style";
 
-import { Footer, Home, Navbar, Contact, Projects, MyDetails } from "./components";
+import { Footer, Navbar } from "./components";
+import { Home, Contact, Projects, MyDetails } from "./pages"
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 

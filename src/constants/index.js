@@ -170,7 +170,7 @@ export const education = [
     from: 'Jan 2020',
     to: 'May 2022',
     link: 'https://le.ac.uk',
-    course:'Master of Science - Advanced Software Engineering',
+    course:'MSc - Advanced Software Engineering',
     keyPoints: [
     ]
   },
@@ -181,7 +181,7 @@ export const education = [
     from: 'Jun 2012',
     to: 'May 2016',
     link: 'https://www.srec.ac.in',
-    course:'Bachelor of Engineering - Electronics and Communication Engineering',
+    course:'BE - Electronics and Communication Engineering',
     keyPoints: [
     ]
   }

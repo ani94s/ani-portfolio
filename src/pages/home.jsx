@@ -1,6 +1,6 @@
 import React from "react";
-import { ani1 } from "../../assets";
-import styles from "../../style";
+import { ani1 } from "../assets";
+import styles from "../style";
 
 const Home = () => (
   <section

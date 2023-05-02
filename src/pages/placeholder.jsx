@@ -1,6 +1,6 @@
 import React from "react";
-import { placeholder } from "../../assets";
-import styles from "../../style";
+import { placeholder } from "../assets";
+import styles from "../style";
 
 const Placeholder = () => (
   <div className={`${styles.paddingX} flex items-center justify-center w-full h-full`}>

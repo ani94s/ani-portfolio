@@ -6,8 +6,8 @@ const Sidebar = ({subHeadings,selectedHeading,setSelectedHeading}) => {
         <ul className='flex flex-col h-full py-4 gap-2'>
             {subHeadings.map((heading)=>{
                 return(
-                    <a href={`#${heading.id}`} onClick={()=>setSelectedHeading(heading.id)} className=''>
-                        <li key={heading.id} className={`${heading.id === selectedHeading?'sm:translate-x-2 bg-gradient-to-l transition-all':''} p-5 sm:px-0 flex items-center gap-2 w-full hover:bg-gradient-to-l hover:sm:translate-x-2 hover:transition-all from-secondary to-primary`}>
+                    <a href={`#${heading.id}`} onClick={()=>setSelectedHeading(heading.id)}>
+                        <li key={heading.id} className={`${heading.id === selectedHeading?'sm:translate-x-2 bg-gradient-to-l transition-all':''} p-5 sm:px-0 flex items-center gap-2 w-full hover:bg-gradient-to-l hover:sm:translate-x-2 hover:transition-all from-tertiary to-primary`}>
                             <img src={heading.icon} alt={heading.name} className="w-8 h-8"/>
                             <p className='hidden sm:block'>{heading.name}</p>
                         </li>

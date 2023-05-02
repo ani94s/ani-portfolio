@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/ani-portfolio/static/css/main.7f6389a0.css",
-    "main.js": "/ani-portfolio/static/js/main.0883317c.js",
+    "main.css": "/ani-portfolio/static/css/main.83c0faf7.css",
+    "main.js": "/ani-portfolio/static/js/main.c004028b.js",
     "static/media/ani2.jpg": "/ani-portfolio/static/media/ani2.a7244499e79a5e2bc108.jpg",
+    "static/media/tech-stack.gif": "/ani-portfolio/static/media/tech-stack.d50e5e7cc7e069057830.gif",
     "static/media/Anirudhan.pdf": "/ani-portfolio/static/media/Anirudhan.c57f7fbc298c548b78c3.pdf",
     "static/media/placeholder.png": "/ani-portfolio/static/media/placeholder.12c901efd9128a3959cc.png",
+    "static/media/techstack.png": "/ani-portfolio/static/media/techstack.deaccabc7ae2c1b21dc2.png",
     "static/media/logo.svg": "/ani-portfolio/static/media/logo.107556e3d36401966a311b4247e57e26.svg",
     "static/media/instagram.svg": "/ani-portfolio/static/media/instagram.a47a7ee77e256ebf101bea5a70974470.svg",
     "static/media/skills.svg": "/ani-portfolio/static/media/skills.ab82ce35756c06d065e570c797454b17.svg",
@@ -21,11 +23,12 @@
     "static/media/education.svg": "/ani-portfolio/static/media/education.00c3bfb26050ef98396e31f6798231b8.svg",
     "static/media/facebook2.svg": "/ani-portfolio/static/media/facebook2.b46c1e2d6f0db6cae5ffcf8a74629080.svg",
     "static/media/professional-exp.svg": "/ani-portfolio/static/media/professional-exp.780dab32c526f4a32c6314ebe86be8c3.svg",
-    "main.7f6389a0.css.map": "/ani-portfolio/static/css/main.7f6389a0.css.map",
-    "main.0883317c.js.map": "/ani-portfolio/static/js/main.0883317c.js.map"
+    "static/media/download.svg": "/ani-portfolio/static/media/download.cac6f4e08c77ecb7a0dc5c6241ba186e.svg",
+    "main.83c0faf7.css.map": "/ani-portfolio/static/css/main.83c0faf7.css.map",
+    "main.c004028b.js.map": "/ani-portfolio/static/js/main.c004028b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f6389a0.css",
-    "static/js/main.0883317c.js"
+    "static/css/main.83c0faf7.css",
+    "static/js/main.c004028b.js"
   ]
 }

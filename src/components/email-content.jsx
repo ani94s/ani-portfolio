@@ -22,7 +22,7 @@ const EmailContent = () => {
           <label htmlFor="message">Message</label>
           <textarea name="message" placeholder="More about the product" className="p-1 h-32 border"/>
         </div>
-        <Button type="submit" className="p-4">Send Email</Button>
+        <Button type="submit" className="p-4 hover:bg-tertiary">Send Email</Button>
       </form>
     </section>
   );

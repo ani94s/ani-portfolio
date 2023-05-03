@@ -16,6 +16,9 @@ module.exports = {
       },
       gridTemplateColumns:{
         auto: 'repeat(auto-fit, minmax(250px, 1fr)',
+      },
+      transitionProperty:{
+        'height': 'height',
       }
     },
     screens: {

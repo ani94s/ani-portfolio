@@ -34,7 +34,7 @@ const Navbar = () => {
               ))}
             </ul>
             <a href={resume} download="Anirudhan-Resume.pdf" >
-              <Button type="button" className="flex gap-2 items-center justify-center rounded-md p-2">
+              <Button type="button" className="flex gap-2 hover:bg-tertiary items-center justify-center rounded-md p-2">
               <img src={download} alt="Download Resume" width="24px" height="24px" />
                 Resume
               </Button>

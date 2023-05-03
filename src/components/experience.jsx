@@ -13,7 +13,7 @@ const Experience = ({id, experiences, title}) => {
                         <h1><span className='text-xl font-medium'>{exp.role ?? exp.course}</span>, {exp.institution}</h1>
                         <h2>{exp.from} - {exp.to}</h2>
                     </div>
-                    return <CollapsibleDiv id={exp.id} header={header} className="w-full shadow-lg shadow-secondary">
+                    return <CollapsibleDiv id={exp.id} header={header} className="w-full shadow-sm shadow-secondary">
                         <ListCard list={exp.keyPoints} />
                     </CollapsibleDiv>
                 })}

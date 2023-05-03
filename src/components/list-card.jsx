@@ -2,10 +2,9 @@ import React from 'react'
 
 const ListCard = ({list}) => {
   return (
-    <ul className='flex flex-col gap-1 p-4'>
+    <ul className='flex flex-col gap-1 p-4 list-disc list-inside'>
         {list.map((subSkill)=>{
-            return <li className='items-center justify-center rounded-md shadow-md bg-gradient-to-l from-secondary to-primary'>
-                <p className='text-left'>{subSkill}</p></li>
+            return <li className=''>{subSkill}</li>
         })}
     </ul>
   )

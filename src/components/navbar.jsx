@@ -6,13 +6,19 @@ import styles from "../style";
 import Button from "./atoms/button";
 import resume from "../assets/Anirudhan.pdf"
 import download from "../assets/icons/download.svg"
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [seletectedTab, setSelectedTab] = useState(navLinks[0].id);
+  const [seletectedTab, setSelectedTab] = useState();
+  useEffect(() => {
+    const currentURL = window.location.pathname;
+    const currentNav = navLinks.find(navLink => navLink.url === currentURL);
+    setSelectedTab(currentNav.id)
+  },[setSelectedTab])
   return (
     <div className={`${styles.boxWidth} ${styles.paddingX} fixed w-full top-0 bg-primary z-20`}>
-        <nav className="w-full flex flex-row justify-between items-center navbar">
+        <nav className="w-full text-white flex flex-row justify-between items-center navbar">
           <Link className="flex flex-row py-4" to={navLinks[0].url} onClick={()=>setSelectedTab(navLinks[0].id)}>
             <img src={anilogo} alt="Logo" className="w-[46px] h-[32px]" />
             <div className="flex flex-col align-middle justify-start text-xs uppercase font-poppins">
@@ -26,7 +32,7 @@ const Navbar = () => {
                 <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)}>
                   <li
                     key={nav.id}
-                    className={`p-4 m-[1px] font-poppins font-normal ${seletectedTab === nav.id ? 'translate-y-1 to-tertiary':'to-secondary'} hover:translate-y-1 hover:transition-transform bg-gradient-to-b from-primary rounded-b-md rounded-t-2xl cursor-pointer text-xs text-white`}
+                    className={`p-4 m-[1px] font-poppins font-normal ${seletectedTab === nav.id ? 'translate-y-1 to-tertiary':'to-secondary'} hover:translate-y-1 hover:transition-transform bg-gradient-to-b from-primary rounded-b-md rounded-t-2xl cursor-pointer text-xs`}
                   >
                     <p className={`${seletectedTab===nav.id ? '':''}`}>{nav.title}</p>
                   </li>
@@ -59,7 +65,7 @@ const Navbar = () => {
                     <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)} className="w-full">
                     <li
                       key={nav.id}
-                      className={`${seletectedTab === nav.id ? 'bg-secondary':''} p-5 w-full hover:bg-tertiary last:mb-0 font-poppins font-normal cursor-pointer text-center text-xs text-white`}
+                      className={`${seletectedTab === nav.id ? 'bg-secondary':''} p-5 w-full hover:bg-tertiary last:mb-0 font-poppins font-normal cursor-pointer text-center text-xs`}
                       onClick={() => setIsOpen((prev) => !prev)}
                     >
                       {nav.title}

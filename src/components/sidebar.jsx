@@ -3,7 +3,7 @@ import React from 'react'
 const Sidebar = ({subHeadings,selectedHeading,setSelectedHeading}) => {
   return (
     <div className='h-full sm:w-1/4 w-max flex z-10 flex-col'>
-        <ul className='flex flex-col h-full py-4 gap-2'>
+        <ul className='flex flex-col h-full py-4 gap-2 text-white'>
             {subHeadings.map((heading)=>{
                 return(
                     <a href={`#${heading.id}`} onClick={()=>setSelectedHeading(heading.id)}>

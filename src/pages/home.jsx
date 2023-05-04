@@ -5,7 +5,7 @@ import styles from "../style";
 const Home = () => (
   <section
     id="intro"
-    className={`flex flex-1 items-center h-full overflow-y-scroll`}
+    className={`flex flex-1 items-center h-full`}
   >
     <div className={`${styles.padding} w-full flex md:flex-row flex-col md:justify-center items-center h-full`}>
       <div
@@ -22,7 +22,7 @@ const Home = () => (
       >
         <div className="flex flex-row justify-start items-start w-full opacity-100">
           <div className="flex-1 font-poppins">
-            <h3 className="font-semibold ss:text-lg text-base text-white">
+            <h3 className="font-semibold ss:text-lg text-base">
               Hi, its me
             </h3>
             <h1 className="text-gradient font-semibold ss:text-7xl text-4xl">

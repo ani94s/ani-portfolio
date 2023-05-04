@@ -33,12 +33,12 @@ const subHeadings = [
 const MyDetails = () => {
     const [selectedHeading, setSelectedHeading] = useState(subHeadings[0].id);
     return(
-        <div className="sm:px-8 px-0 flex flex-row w-full h-full">
-            <Sidebar 
+        <div className="sm:px-8 px-0 pb-8 flex flex-row w-full h-full">
+            {/* <Sidebar 
                 subHeadings={subHeadings} 
                 selectedHeading={selectedHeading} 
                 setSelectedHeading={setSelectedHeading}
-            />
+            /> */}
             <Subpanel 
                 subHeadings={subHeadings}
                 selectedHeading={selectedHeading}

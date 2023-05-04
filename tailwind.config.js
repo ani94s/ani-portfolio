@@ -15,7 +15,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
       },
       gridTemplateColumns:{
-        auto: 'repeat(auto-fit, minmax(250px, 1fr)',
+        'skill': 'repeat(auto-fill, minmax(250px, 1fr))',
       },
       transitionProperty:{
         'height': 'height',

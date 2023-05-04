@@ -9,7 +9,7 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
-    url: "/ani-portfolio",
+    url: "/ani-portfolio/",
   },
   {
     id: "resume",

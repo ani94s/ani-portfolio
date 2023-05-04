@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     const currentURL = window.location.pathname;
     const currentNav = navLinks.find(navLink => navLink.url === currentURL);
-    setSelectedTab(currentNav.id)
+    setSelectedTab(currentNav?.id ?? navLinks[0].id)
   },[setSelectedTab])
   return (
     <div className={`${styles.boxWidth} ${styles.paddingX} fixed w-full top-0 bg-primary z-20`}>
@@ -29,12 +29,11 @@ const Navbar = () => {
           <div className="sm:flex hidden gap-2 items-center">
             <ul className="list-none flex flex-row justify-end items-center">
               {navLinks.map((nav, index) => (
-                <Link to={nav.url} onClick={()=>setSelectedTab(nav.id)}>
+                <Link key={nav.id} to={nav.url} onClick={()=>setSelectedTab(nav.id)}>
                   <li
-                    key={nav.id}
                     className={`p-4 m-[1px] font-poppins font-normal ${seletectedTab === nav.id ? 'translate-y-1 to-tertiary':'to-secondary'} hover:translate-y-1 hover:transition-transform bg-gradient-to-b from-primary rounded-b-md rounded-t-2xl cursor-pointer text-xs`}
                   >
-                    <p className={`${seletectedTab===nav.id ? '':''}`}>{nav.title}</p>
+                    <p>{nav.title}</p>
                   </li>
                 </Link>
               ))}

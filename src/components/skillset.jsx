@@ -1,23 +1,20 @@
 import React from 'react'
-import ListCard from './list-card'
 import { resumeSkills } from '../constants'
 import ResumeContainer from './atoms/resume-container'
-import CollapsibleDiv from './collapsible-div'
 
 
 const Skillset = ({id}) => {
   return (
       <ResumeContainer id="skills" title="Skills and Tools">
-          <div className='flex flex-col sm:grid gap-4 grid-cols-skill p-4'>
-              {resumeSkills.map((skill)=>{
-                const header = <div className='flex flex-rpw p-4 justify-center items-center'>
-                <h3 className='py-2 text-center'>{skill.title}</h3>
+          {resumeSkills.map((skill)=>(
+            <div className='pt-8 flex flex-wrap gap-2 w-full'>
+                {skill.skillList.map((subskill) => ( 
+                  <div className={`px-4 py-1 text-xl font-medium font-poppins text-primary w-max ${skill.skillClassName} rounded-l-full rounded-r-full shadow-md`}>
+                    {subskill}
+                  </div>
+                ))}
             </div>
-                  return <CollapsibleDiv  id={skill.id} header={header}>
-                    <ListCard list={skill.skillList}/>
-                  </CollapsibleDiv>
-              })}
-          </div>
+            ))}
       </ResumeContainer>
   )
 }

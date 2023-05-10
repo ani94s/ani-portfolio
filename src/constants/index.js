@@ -55,31 +55,37 @@ export const resumeSkills =[
   {
       id:'front-end',
       title:'Front End',
+      skillClassName:'bg-[#ffb766]',
       skillList:['HTML','CSS','Tailwind','JavaScript','React','TypeScript','FIGMA','LabVIEW']
   },
   {
       id:'back-end',
       title:'Back End',
+      skillClassName:'bg-[#c2edda]',
       skillList:['C','C++','GraphQL','REST','JSON','Node','AWS DynamoDB','Clickhouse']
   },
   {
       id:'tools',
       title:'Tools and IDE',
+      skillClassName:'bg-[#68d388]',
       skillList:['VS code','Eclipse','Sublime Text','Mixpanel','Retool','Shopify','LaunchDarkly','Postman','Appsheet']
   },
   {
       id:'version-control',
       title:'Version Control',
+      skillClassName:'bg-[#fceed1]',
       skillList:['GIT','SVN','GitHub','BitBucket','TortoiseSVN']
   },
   {
       id:'project-management',
       title:'Project Management',
+      skillClassName:'bg-[#fff5d7]',
       skillList:['Agile','SCRUM','Kanban','JIRA','Trello']
   },
   {
       id:'others',
       title:'Additional Skills',
+      skillClassName:'bg-[#f9c5bd]',
       skillList:['Mentorship and Training','Leadership','Team Player','Planning and Coordination']
   }
 ]

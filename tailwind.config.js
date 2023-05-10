@@ -28,7 +28,7 @@ module.exports = {
       gridTemplateColumns:{
         'skill': 'repeat(auto-fill, minmax(160px, 1fr))',
         'skillSmall': 'repeat(auto-fill, minmax(150px, 1fr))',
-        'project': 'repeat(auto-fill, minmax(300px, 1fr))',
+        'project': 'repeat(auto-fill, minmax(300px, 2fr))',
       },
       transitionProperty:{
         'height': 'height',
@@ -43,7 +43,7 @@ module.exports = {
       sm: "768px",
       md: "1024px",
       lg: "1200px",
-      xl: "1700px",
+      xl: "1440px",
     },
   },
   plugins: [],

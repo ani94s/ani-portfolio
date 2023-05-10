@@ -9,7 +9,7 @@ const Projects = () => {
     return(
     <section id="projects" className={`${styles.padding} w-full bg-gradient-to-t from-apricot`}>
         <ResumeContainer id="projects" title="Projects">
-            <div className="grid py-8 sm:gap-6 gap-2 grid-col grid-cols-project">
+            <div className="grid justify-center py-8 sm:gap-6 gap-2 grid-col grid-cols-project w-full">
                 {projects.map((project) => {
                     return(
                         <ThumbnailCard key={project.id} className="pt-6 flex flex-col justify-between flex-1 px-6 bg-dimWhite" thumbnail={project.image} imageDesc={project.id}>

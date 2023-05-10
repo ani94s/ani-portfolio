@@ -1,9 +1,5 @@
-import {
-  facebook,
-  instagram,
-  linkedin,
-  twitter,
-} from "../assets";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTailwindcss, SiInstagram, SiFacebook, SiLinkedin,SiGithub, SiTypescript, SiJest, SiGraphql, SiGit, SiJira, SiGmail, SiD3Dotjs, SiNodedotjs, SiPostgresql } from "react-icons/si";
+import { figmaLogo, nonogramAnimate } from "../assets";
 
 export const navLinks = [
   {
@@ -28,28 +24,126 @@ export const navLinks = [
   },
 ];
 
+
 export const socialMedia = [
   {
-    id: "social-media-1",
-    icon: instagram,
-    link: "https://www.instagram.com/",
+    id: "linkedIn",
+    icon: <SiLinkedin />,
+    link: "https://www.linkedin.com/in/anirudhan-srisudhan/",
+    color: "#0072b1"
   },
   {
-    id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
+    id: "instagram",
+    icon: <SiInstagram />,
+    link: "https://www.instagram.com/anirudhan94s/",
+    color: "#C13584"
   },
   {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
+    id: "facebook",
+    icon: <SiFacebook />,
+    link: "https://www.facebook.com/anirudhan94s/",
+    color: "#3b5998"
   },
   {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
+    id: "github",
+    icon: <SiGithub />,
+    link: "https://github.com/ani94s",
+    color: "#fafafa"
+  },
+  {
+    id: "email",
+    icon: <SiGmail />,
+    link: "mailto:anirudhan94s@gmail.com",
+    color: "#ea4335"
   },
 ];
+
+export const allSkills = [
+  {
+    id: 'html',
+    label: 'HTML',
+    icon: <SiHtml5 />,
+    color: "#FC490B"
+  },
+  {
+    id: 'css',
+    label: 'CSS',
+    icon: <SiCss3 />,
+    color: "#2196F3"
+  },
+  {
+    id: 'javascript',
+    label: 'Javascript',
+    icon: <SiJavascript />,
+    color: "#FFDF00"
+  },
+  {
+    id: 'react',
+    label: 'React',
+    icon: <SiReact />,
+    color: "#00ACEA"
+  },
+  {
+    id: 'node',
+    label: 'Node.js',
+    icon: <SiNodedotjs />,
+    color: "#68a063"
+  },
+  {
+    id: 'typescript',
+    label: 'TypeScript',
+    icon: <SiTypescript />,
+    color: "#3178C6"
+  },
+  {
+    id: 'jest',
+    label: 'Jest',
+    icon: <SiJest />,
+    color: "#969696"
+  },
+  {
+    id: 'graphql',
+    label: 'GraphQL',
+    icon: <SiGraphql />,
+    color: "#f4447c"
+  },
+  {
+    id: 'git',
+    label: 'git',
+    icon: <SiGit />,
+    color: "#F1502F"
+  },
+  {
+    id: 'jira',
+    label: 'Jira',
+    icon: <SiJira />,
+    color: "#2684FF"
+  },
+  {
+    id: 'tailwind',
+    label: 'Tailwind',
+    icon: <SiTailwindcss />,
+    color: "#3490dc"
+  },
+  {
+    id: 'd3',
+    label: 'D3.js',
+    icon: <SiD3Dotjs />,
+    color: "#f26d58"
+  },
+  {
+    id: 'figma',
+    label: 'Figma',
+    icon: <img src={figmaLogo} alt="figma" className="w-20 h-20" />,
+    color: "#f26d58"
+  },
+  {
+    id: 'postgres',
+    label: 'PostgreSQL',
+    icon: <SiPostgresql />,
+    color: "#0064a5"
+  },
+]
 
 export const resumeSkills =[
   {
@@ -100,12 +194,10 @@ export const workExperience = [
     link: 'https://www.clippd.com/',
     role:'Application Developer',
     keyPoints: [
-      'Developed and implemented innovative front-end designs utilizing React, TypeScript, and D3.js, resulting in more than a 40% increase in user engagement',
-      'Collaborated with cross-functional teams, including designers and backend engineers, to integrate GraphQL APIs with the application’s backend, resulting in a reduction in API response times',
+      'Developed and proposed innovative, comprehensive, user-friendly front-end solutions for pro golfers and coaches with React, TypeScript, Tailwind CSS, and D3.js, resulting in more than a 40% increase in user engagement.',
+      'Collaborated with cross-functional teams, including designers and backend engineers, to integrate GraphQL APIs and AWS services with the application’s backend.',
       'Generated unit tests using Jest and worked with the QA engineers on the testing of new features for the application, resulting in a reduction of more than 50% of release issues',
-      'Developed a comprehensive, user-friendly application for pro golfers and coaches, that increased their daily efficiency by 35% and reduced the time spent on administrative tasks by 40%, as proven through user feedback surveys',
-      'Implemented crucial updates and feature enhancements to the app every sprint, resulting in a 99% user satisfaction rating among professional golfers worldwide',
-      'Coordinated with project managers and stakeholders to successfully launch the application, resulting in over 100 golfers within the first month of release.'
+      'Coordinated with project managers and stakeholders, using project management tools like JIRA and Trello, to successfully launch the application, resulting in over 100 golfers within the first month of release.'
     ]
   },
   {
@@ -117,24 +209,36 @@ export const workExperience = [
     link: '',
     role:'Software Engineer Intern',
     keyPoints: [
-      'Developed and implemented a customized order fulfilment software solution that reduced processing time by 40% and increased the accuracy of orders by 25%, resulting in a 15% increase in customer satisfaction.',
-      'Collaborated with the inventory management team to design and implement an innovative software system that reduced stockouts by 50% while simultaneously decreasing overstocking incidents, saving the company £10K annually.',
-      'Created user-friendly interfaces for employees and customers within the e-commerce grocery shop\'s software, resulting in a 30% decrease in customer support tickets and increased online sales.'
+      'Built a customized order fulfilment software solution that reduced processing time by 40% and increased the accuracy of orders by 25%, resulting in a 15% increase in customer satisfaction.',
+      'Partnered with the inventory management team to design and implement an innovative software system that reduced stockouts by 50% while simultaneously decreasing overstocking incidents, saving the company £10K annually.',
+      'Devised user-friendly interfaces for employees and customers within the e-commerce grocery shop\'s software, resulting in a 30% decrease in customer support tickets and increased online sales.'
     ]
   },
   {
-    id:'soliton',
+    id:'soliton-sr',
     institution:'Soliton Technologies',
     location: 'Coimbatore,India',
-    from: 'Jun 2016',
+    from: 'Jun 2018',
     to: 'Nov 2019',
     link: 'https://www.solitontech.com/',
     role:'Senior Project Engineer',
     keyPoints: [
       'Developed automated testing software using the OOPS framework for three different industries, resulting in a reduction in manual testing efforts by 75%.',
-      'Collaborated with the QA team to identify potential bugs and improve product quality, resulting in a 60% decrease in bug reports.',
+      'Indulged in owning different projects and guiding junior engineers to ensure seamless integration of the testing application, leading to an increase in overall product quality of 50%.',
       'Collaborated with cross-functional teams to ensure seamless integration of the testing application, leading to an increase in overall product quality.',
       'Worked onsite with the client to Develop and deploy a comprehensive testing application for medical monitors and screens, resulting in a 75% reduction in testing time.',
+    ]
+  },
+  {
+    id:'soliton-jr',
+    institution:'Soliton Technologies',
+    location: 'Coimbatore,India',
+    from: 'May 2016',
+    to: 'Jun 2018',
+    link: 'https://www.solitontech.com/',
+    role:'Project Engineer',
+    keyPoints: [
+      'Produced automated testing software using the OOPS framework in LabVIEW for three different industries, resulting in a 75% reduction in manual testing efforts.',
     ]
   },
 ]
@@ -191,4 +295,31 @@ export const education = [
     keyPoints: [
     ]
   }
+]
+
+export const projects = [
+  {
+    id:"nonogram",
+    title: "Nonogram Puzzle Solver",
+    desc: "A web application or a web UI to play nonogram puzzles",
+    githubLink:"",
+    techstack: ['html','css', 'javascript','react'],
+    image: nonogramAnimate,
+  },
+  {
+    id:"social-feed",
+    title: "Social Feed for Golfers",
+    desc: "Teamed up with senior developers to design and code a visually appealing prototype of the social feed",
+    githubLink:"",
+    techstack: ['html','css', 'javascript','react','typescript','jest','tailwind'],
+    image: "",
+  },
+  {
+    id:"spl",
+    title: "Soliton Premier League",
+    desc: "A gaming platform that is used for the company's annual hackathon, where players upload their bots and observe their gameplay",
+    githubLink:"",
+    techstack: ['html','css', 'javascript'],
+    image: "",
+  },
 ]

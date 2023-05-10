@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
-import Sidebar from "../components/sidebar";
-import Subpanel from "../components/subpanel";
 import { profExp } from "../assets";
 import { otherExp } from "../assets";
-import { education } from "../assets";
+import { educationLogo } from "../assets";
 import { skills } from "../assets";
+import Experience from "../components/experience";
+import { education, otherExperience, workExperience,  } from "../constants";
+import Education from "../components/education";
 
 const subHeadings = [
     {
@@ -21,7 +21,7 @@ const subHeadings = [
     {
         id:'education',
         name:'Education',
-        icon: education
+        icon: educationLogo
     },
     {
         id:'key-skills',
@@ -31,19 +31,18 @@ const subHeadings = [
 ]
 
 const MyDetails = () => {
-    const [selectedHeading, setSelectedHeading] = useState(subHeadings[0].id);
     return(
-        <div className="sm:px-8 px-0 pb-8 flex flex-row w-full h-full">
-            <Sidebar 
-                subHeadings={subHeadings} 
-                selectedHeading={selectedHeading} 
-                setSelectedHeading={setSelectedHeading}
-            />
-            <Subpanel 
-                subHeadings={subHeadings}
-                selectedHeading={selectedHeading}
-            />
-        </div>
+        <>
+        <section id="professional-exp" className="sm:px-8 pb-8 px-4 w-full">
+            <Experience id={subHeadings[0].id} experiences={workExperience} title="Professional Experience" />
+        </section>
+        <section id="other-exp" className="sm:px-8 pb-8 px-4 w-full">
+            <Experience id={subHeadings[1].id} experiences={otherExperience} title="Other Experience" />
+        </section>
+        <section id="education" className="sm:px-8 pb-8 px-4 w-full">
+            <Education id={subHeadings[2].id} education={education} title="Education" />
+        </section>
+        </>
     )
 };
 

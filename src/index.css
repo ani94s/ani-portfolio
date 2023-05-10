@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +20,7 @@
 }
 
 .text-gradient {
-  background: radial-gradient(
+  background: linear-gradient(
     64.18% 64.18% at 71.16% 35.69%,
     #def9fa 0.89%,
     #bef3f5 17.23%,
@@ -74,10 +75,6 @@
 
 .bg-discount-gradient {
   background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
-}
-
-.box-shadow {
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
 .sidebar {

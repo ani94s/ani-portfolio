@@ -1,20 +1,24 @@
 import React from 'react'
-import { resumeSkills } from '../constants'
+import { IconContext } from 'react-icons'
+import { allSkills } from '../constants'
 import ResumeContainer from './atoms/resume-container'
 
 
-const Skillset = ({id}) => {
+const Skillset = () => {
   return (
       <ResumeContainer id="skills" title="Skills and Tools">
-          {resumeSkills.map((skill)=>(
-            <div className='pt-8 flex flex-wrap gap-2 w-full'>
-                {skill.skillList.map((subskill) => ( 
-                  <div className={`px-4 py-1 text-xl font-medium font-poppins text-primary w-max ${skill.skillClassName} rounded-l-full rounded-r-full shadow-md`}>
-                    {subskill}
-                  </div>
-                ))}
+        <div className='pt-8 grid grid-cols-skillSmall sm:grid-cols-skill gap-2 sm:gap-6 w-full'>
+        {allSkills.map((skill) => 
+          <div key={skill.id} className={`px-4 py-8 flex flex-col justify-center items-center bg-deepMattGray ${skill.skillClassName} shadow-lg shadow-deepMattGray rounded-lg`}>
+            <IconContext.Provider value={{ size: '80px', color: skill.color }}>
+              {skill.icon}
+            </IconContext.Provider>
+            <div className='pt-4 font-medium text-2xl font-poppins text-skyBlue'>
+              {skill.label}
             </div>
-            ))}
+        </div>
+        )}
+        </div>
       </ResumeContainer>
   )
 }

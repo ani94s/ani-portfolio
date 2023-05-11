@@ -9,7 +9,7 @@ const Home = () => (
   >
     <div className={`${styles.padding} w-full flex md:flex-row flex-col md:justify-center items-center h-full`}>
       <div
-        className={`md:w-[30%] w-full max-w-sm flex md:justify-end justify-center items-center`}
+        className={`md:w-[30%] w-full max-w-sm flex md:justify-end justify-center pb-4 items-center`}
       >
         <img
           src={profilePic}
@@ -24,10 +24,10 @@ const Home = () => (
           <h3 className="font-semibold ss:text-lg text-base">
             Hi, its me
           </h3>
-          <h1 className="text-secondary font-dancing font-semibold ss:text-7xl text-4xl">
+          <h1 className="text-secondary font-dancing font-semibold ss:text-7xl text-6xl">
             Anirudhan
           </h1>
-          <p className="font-semibold text-3xl text-deepMattGray">Front-End Developer</p>
+          <p className="font-semibold ss:text-3xl text-2xl text-deepMattGray">Front-End Developer</p>
           <p className="font-semibold ss:text-lg text-base">Inspiring Innovation, Embracing Growth</p>
         </div>
       </div>

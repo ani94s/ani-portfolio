@@ -264,7 +264,7 @@ export const otherExperience = [
     from: 'Mar 2019',
     to: 'Jun 2019',
     link: 'https://www.solitontech.com/',
-    role:'Senior Project Engineer',
+    role:'Induction and Training Coordinator',
     keyPoints: [
       'Drove the internship training program and mentored 25 junior engineers on software development best practices, resulting in a 90% retention rate of engineers hired in permanent roles.',
       'The internship focused on and provided insights into LabVIEW and programming fundamentals, along with the software development lifecycle.'
@@ -301,7 +301,7 @@ export const projects = [
   {
     id:"nonogram",
     title: "Nonogram Puzzle Solver",
-    desc: "A web application or a web UI to play nonogram puzzles",
+    desc: "A web application or a web UI to play nonogram puzzles. The Nonogram Puzzle Solver is developed as the final dissertation project in partial fulfilment of the MSc course, for which earned a 'Distinction' and received accolades.",
     githubLink:"",
     techstack: ['html','css', 'javascript','react'],
     image: nonogramAnimate,

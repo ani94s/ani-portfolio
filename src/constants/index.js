@@ -301,15 +301,15 @@ export const projects = [
   {
     id:"nonogram",
     title: "Nonogram Puzzle Solver",
-    desc: "A web application or a web UI to play nonogram puzzles. The Nonogram Puzzle Solver is developed as the final dissertation project in partial fulfilment of the MSc course, for which earned a 'Distinction' and received accolades.",
-    githubLink:"",
-    techstack: ['html','css', 'javascript','react'],
+    desc: "A web application or a web UI to play nonogram puzzles.",
+    githubLink:"https://github.com/ani94s/nonogram-puzzle",
+    techstack: ['html','css', 'typescript','react'],
     image: nonogramAnimate,
   },
   {
     id:"social-feed",
     title: "Social Feed for Golfers",
-    desc: "Teamed up with senior developers to design and code a visually appealing prototype of the social feed",
+    desc: "Teamed up with senior developers to design and code a visually appealing prototype of the social feed.",
     githubLink:"",
     techstack: ['html','css', 'javascript','react','typescript','jest','tailwind'],
     image: "",
@@ -317,7 +317,7 @@ export const projects = [
   {
     id:"spl",
     title: "Soliton Premier League",
-    desc: "A gaming platform that is used for the company's annual hackathon, where players upload their bots and observe their gameplay",
+    desc: "A gaming platform that is used for the company's annual hackathon, where players upload their bots and observe their gameplay.",
     githubLink:"",
     techstack: ['html','css', 'javascript'],
     image: "",

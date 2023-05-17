@@ -1,5 +1,5 @@
 import React from 'react'
-import ResumeContainer from './atoms/resume-container'
+import ResumeContainer from './wrappers/resume-container'
 
 
 const Education = ({id, education, title}) => {

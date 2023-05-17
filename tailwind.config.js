@@ -35,6 +35,9 @@ module.exports = {
       },
       maxWidth:{
         'card': '300px',
+      },
+      height:{
+        'footer': '52px',
       }
     },
     screens: {

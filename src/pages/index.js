@@ -1,8 +1,9 @@
 
 import Home from "./home";
-import MyDetails from "./my-details";
+import Experiences from "./experiences";
 import Contact from "./contact";
 import Projects from "./projects";
 import Placeholder from "./placeholder";
+import AboutMe from "./about-me";
 
-export {Home, MyDetails, Contact, Projects, Placeholder}
+export {Home, Experiences, Contact, Projects, Placeholder, AboutMe}

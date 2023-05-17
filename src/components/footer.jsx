@@ -15,7 +15,7 @@ const Footer = () => (
           {socialMedia.map((social) => {
             return (
               <a href={social.link} key={social.id}>
-                <IconContext.Provider value={{ size: '20px', color:social.color , className:'hover:scale-150 transition-all duration-300' }} >
+                <IconContext.Provider value={{ size: '20px', color:social.color , className:'hover:scale-125 transition-all duration-300' }} >
                 {social.icon}
                 </IconContext.Provider>
             </a>

@@ -24,7 +24,7 @@ const Home = () => (
       >
         <div className="flex flex-col justify-start items-start w-full">
           <h3 className="font-semibold ss:text-lg text-base">
-            Hi, its me
+            Hi, it's me
           </h3>
           <h1 className="text-secondary font-dancing font-semibold ss:text-7xl text-6xl">
             Anirudhan

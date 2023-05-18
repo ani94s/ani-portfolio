@@ -18,7 +18,7 @@ const Footer = () => (
                 <IconContext.Provider value={{ size: '20px', color:social.color , className:'hover:scale-125 transition-all duration-300' }} >
                 {social.icon}
                 </IconContext.Provider>
-            </a>
+              </a>
             )
           })}
           </div>

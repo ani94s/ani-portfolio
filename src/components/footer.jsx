@@ -16,7 +16,7 @@ const Footer = () => (
             return (
               <a href={social.link} key={social.id}>
                 <IconContext.Provider value={{ size: '20px', color:social.color , className:'hover:scale-125 transition-all duration-300' }} >
-                {social.icon}
+                  {social.icon}
                 </IconContext.Provider>
               </a>
             )

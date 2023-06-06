@@ -3,15 +3,26 @@ import { IconContext } from "react-icons";
 import { SiGithub, SiGmail } from "react-icons/si";
 import { profilePic } from "../assets";
 import styles from "../style";
+import {motion as m} from "framer-motion"
+
+const motionVariant = {
+  visible:{ opacity: 1 },
+  hidden:{ opacity: 0, transition:{ duration:0 } },
+}
 
 const Home = () => (
-  <section
+  <m.section
     id="intro"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.8 }}
     className={`flex flex-1 items-center h-full text-blueberry bg-gradient-to-b from-apricot`}
   >
-    <div className={`${styles.padding} w-full flex sm:flex-row flex-col sm:justify-center items-center h-full`}>
-      <div
-        className={`sm:w-[30%] w-full max-w-sm flex sm:justify-end justify-center pb-4 items-center`}
+    <m.div 
+    variants={motionVariant}
+    transition={{ease:"linear", duration: 0.75}}
+    className={`${styles.padding} w-full flex sm:flex-row flex-col sm:justify-center items-center h-full`}>
+      <div className={`sm:w-[30%] w-full max-w-sm flex sm:justify-end justify-center pb-4 items-center`}
       >
         <img
           src={profilePic}
@@ -19,8 +30,7 @@ const Home = () => (
           className="w-auto relative z-10 rounded-full"
         />
       </div>
-      <div
-        className={"flex flex-row lg:pl-16 sm:pl-12 pl-0 sm:pb-0 pb-8"}
+      <div className={"flex flex-row lg:pl-16 sm:pl-12 pl-0 sm:pb-0 pb-8"}
       >
         <div className="flex flex-col justify-start items-start w-full">
           <h3 className="font-semibold ss:text-lg text-base">
@@ -45,8 +55,8 @@ const Home = () => (
           </a>
         </div>
       </div>
-    </div>
-  </section>
+    </m.div>
+  </m.section>
 );
 
 export default Home;

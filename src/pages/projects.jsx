@@ -5,15 +5,44 @@ import ResumeContainer from "../components/wrappers/resume-container";
 import ThumbnailCard from "../components/wrappers/thumbnail-card";
 import { allSkills, projects } from "../constants";
 import styles from "../style";
+import {motion as m} from "framer-motion"
+
+const parentVariant = {
+    visible:{ opacity: 1 },
+    hidden:{ opacity: 0, transition:{ duration:0 } },
+  }
+  const childVariant = {
+    visible: i => ({ x: "0%", opacity: 1, transition:{type: "spring", bounce: 0.5, duration: 1, delay:0.3*i} }),
+    hidden:{ x: "100%", opacity: 0, transition:{ duration:0 } },
+  }
 
 const Projects = () => {
     return(
-    <section id="projects" className={`${styles.padding} w-full`}>
+    <m.section 
+    id="projects" 
+    variants={parentVariant}
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    className={`${styles.padding} w-full`}
+    >
         <ResumeContainer id="projects" title="Projects">
             <div className="grid justify-center py-8 sm:gap-6 gap-4 grid-col grid-cols-project w-full">
-                {projects.map((project) => {
+                {projects.map((project,index) => {
                     return(
-                        <ThumbnailCard key={project.id} className="pt-6 flex flex-col justify-between flex-1 px-6 bg-dimWhite" thumbnail={project.image} imageDesc={project.id}>
+                        <m.div
+                        variants={childVariant}
+                        custom={index}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        >
+                        <ThumbnailCard 
+                        key={project.id} 
+                        className="pt-6 flex flex-col justify-between flex-1 px-6 bg-dimWhite" 
+                        thumbnail={project.image} 
+                        imageDesc={project.id}
+                        >
                             <div id="project-details" className="flex-1 flex flex-col ">
                             <h2 className='text-center text-2xl font-medium text-primary'>{project.title}</h2>
                             <p className='py-4 text-lg font-normal text-justify text-primary'>{project.desc} </p>
@@ -35,11 +64,12 @@ const Projects = () => {
                                 })}
                             </div>
                         </ThumbnailCard>
+                        </m.div>
                     )
                 })}
             </div>
         </ResumeContainer>
-    </section>
+    </m.section>
     )
 };
 

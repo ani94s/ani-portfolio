@@ -36,11 +36,11 @@ const Experiences = () => {
         <section id="professional-exp" className="sm:px-8 py-8 px-4 w-full">
             <Experience id={subHeadings[0].id} experiences={workExperience} title="Professional Experience" />
         </section>
+        <section id="education" className="sm:px-8 pb-8 px-4 w-full">
+            <Education id={subHeadings[2].id} education={education} title="Education" />
+        </section>
         <section id="other-exp" className="sm:px-8 pb-8 px-4 w-full">
             <Experience id={subHeadings[1].id} experiences={otherExperience} title="Other Experience" />
-        </section>
-        <section id="education" className="sm:px-8 pb-8 px-4 w-full bg-gradient-to-t from-apricot">
-            <Education id={subHeadings[2].id} education={education} title="Education" />
         </section>
         </>
     )

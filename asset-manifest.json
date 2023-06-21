@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/ani-portfolio/static/css/main.d8b0ec9b.css",
-    "main.js": "/ani-portfolio/static/js/main.1395d547.js",
+    "main.js": "/ani-portfolio/static/js/main.dbced4e8.js",
     "static/media/Ani-profile.jpg": "/ani-portfolio/static/media/Ani-profile.2987e8b19573f3a6d053.jpg",
     "static/media/tech-stack.gif": "/ani-portfolio/static/media/tech-stack.d50e5e7cc7e069057830.gif",
     "static/media/figma.png": "/ani-portfolio/static/media/figma.de9ddc6c2c43c542a17e.png",
-    "static/media/Anirudhan_FrontEnd_Resume.pdf": "/ani-portfolio/static/media/Anirudhan_FrontEnd_Resume.70028388e3e82a8b08d1.pdf",
+    "static/media/Anirudhan_FrontEnd_Resume.pdf": "/ani-portfolio/static/media/Anirudhan_FrontEnd_Resume.9be19c70baf71a27458d.pdf",
     "static/media/nonogram-animation.gif": "/ani-portfolio/static/media/nonogram-animation.b2601bce1fda156aa4f9.gif",
     "static/media/placeholder.png": "/ani-portfolio/static/media/placeholder.12c901efd9128a3959cc.png",
     "static/media/techstack.png": "/ani-portfolio/static/media/techstack.deaccabc7ae2c1b21dc2.png",
@@ -27,10 +27,10 @@
     "static/media/professional-exp.svg": "/ani-portfolio/static/media/professional-exp.780dab32c526f4a32c6314ebe86be8c3.svg",
     "static/media/download.svg": "/ani-portfolio/static/media/download.cac6f4e08c77ecb7a0dc5c6241ba186e.svg",
     "main.d8b0ec9b.css.map": "/ani-portfolio/static/css/main.d8b0ec9b.css.map",
-    "main.1395d547.js.map": "/ani-portfolio/static/js/main.1395d547.js.map"
+    "main.dbced4e8.js.map": "/ani-portfolio/static/js/main.dbced4e8.js.map"
   },
   "entrypoints": [
     "static/css/main.d8b0ec9b.css",
-    "static/js/main.1395d547.js"
+    "static/js/main.dbced4e8.js"
   ]
 }
